@@ -89,6 +89,10 @@ forever start app.js
     -t, --killTree   Kills the entire child process tree on `stop`
     --killSignal     Support exit signal customization (default is SIGKILL),
                      used for restarting script gracefully e.g. --killSignal=SIGTERM
+    --tailable       log files will be rolled based on maxsize and maxfiles, but in ascending order. The filename will always have the most recent log lines. The larger the appended number, the older the log file. This option requires maxFiles to be set, or it will be ignored.
+    --maxsize SIZE   Max size in bytes of the logfile, if the size is exceeded then a new file is created, a counter will become a suffix of the log file.
+    --maxFiles N     Limit the number of files created when the size of the logfile is exceeded.
+    --zippedArchive  all log files but the current one will be zipped.
     -h, --help       You're staring at it
 
   [Long Running Process]

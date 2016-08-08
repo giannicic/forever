@@ -1,0 +1,10 @@
+{
+  "uid": "log-on-interval",
+  "append": true,
+  "script": "log-on-interval.js",
+  "sourceDir": "./test/fixtures",
+  "tailable": true,
+  "maxsize": 100,
+  "maxFiles": 1,
+  "zippedArchive": true
+}
